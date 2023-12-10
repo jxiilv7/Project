@@ -5,7 +5,7 @@ import java.time.format.DateTimeParseException;
 import java.io.*;
 import java.text.SimpleDateFormat;
 
-public class KkuSystem implements FileNames, ReserveTasks{
+public class KkuSystem implements FileNames, ReserveTasks, OptionalReserveTasks{
 
 	static List<ReserveBlock> reservations = new ArrayList<>();
 	static People people = new People();
@@ -428,10 +428,7 @@ public class KkuSystem implements FileNames, ReserveTasks{
 	}
 
 
-	           
-	 
-
-	/*@Override
+@Override
 	public List<ReserveBlock> findReservedBlockAt(int clock) {
 	    List<ReserveBlock> result = new ArrayList<>();
 	    for (ReserveBlock block : reservations) {
@@ -450,6 +447,6 @@ public class KkuSystem implements FileNames, ReserveTasks{
 	        }
 	    }
 	    return result;
-	}*/
+	}
 
 }
